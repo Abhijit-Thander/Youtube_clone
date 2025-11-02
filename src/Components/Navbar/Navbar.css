@@ -8,6 +8,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 9;
 }
 
 .flex-div {
@@ -43,4 +44,9 @@ nav input {
 
 .nav-right img {
   width: 1.7vw;
+}
+
+.user {
+  border-radius: 50%;
+  height: 4vh;
 }
