@@ -7,6 +7,7 @@ import upload_icon from "../../assets/upload.png";
 import more_icon from "../../assets/more.png";
 import notification_icon from "../../assets/notification.png";
 import user_icon from "../../assets/jack.png";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setSidebar }) => {
   const sidebar = () => {
@@ -17,7 +18,9 @@ const Navbar = ({ setSidebar }) => {
     <nav>
       <div className="nav-left flex-div">
         <img className="menu-icon" src={menu_icon} onClick={sidebar} />
-        <img className="logo" src={logo} alt="" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="" />
+        </Link>
       </div>
       <div className="nav-mid flex-div">
         <input type="search" placeholder="Search..." />
