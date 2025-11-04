@@ -2,9 +2,9 @@
   flex-basis: 68%;
   /* padding: 0 2%; */
 }
-.play-video-container video {
+.play-video-container iframe {
   width: 100%;
-  height: 80vh;
+  height: 37vw;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -100,6 +100,7 @@
   font-size: 13px;
   margin-bottom: 2px;
 }
+
 .add-comment h3 span {
   color: #5a5a5a;
   font-weight: 500;
@@ -107,6 +108,11 @@
   margin-left: 8px;
 }
 
+.comment-text {
+  max-width: 500px;
+  /* width: 60%; */
+  /* flex: 1; */
+}
 .comment-action {
   display: flex;
   align-items: center;
